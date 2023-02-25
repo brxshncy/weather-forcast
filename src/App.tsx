@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // components
 import { NavBar } from "./components/common/NavBar";
-import { LandingPage } from "./pages/LandingPage/LandingPage";
+import { Login } from "./pages/LandingPage/Login";
 import { HomePage } from "./pages/HomPage/HomePage";
 
 //hook
@@ -21,7 +21,7 @@ export const App = () => {
                         <Route path='/' element={<HomePage />} />
                     </>
                 ) : (
-                    <Route path='/*' element={<LandingPage />} />
+                    <Route path='/*' element={<Login />} />
                 )}
             </Routes>
         </Router>
