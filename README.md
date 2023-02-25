@@ -1,47 +1,32 @@
-# Getting Started with Create React App
+# Weather Forecast Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that allows users to view the weather in their city after logging in with their Github user. This application is built with React, TypeScript, and Tailwind CSS, and uses Auth0 for Github authentication and the OpenWeatherMap API to retrieve weather data.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To get started, follow these steps:
 
-### `npm start`
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Create an Auth0 account and configure a new application. Update the `REACT_APP_AUTH0_CLIENTKEY` and `REACT_APP_AUTH0_DOMAIN` environment variables in a `.env` file with your Auth0 application information.
+4. Create an OpenWeatherMap API account and generate an API key. Update the `REACT_APP_WEATHER_API_KEY` environment variable in the `.env` file with your API key.
+5. Run the app using `npm start`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Notes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   The `WeatherPage` component will only display the date and temperature when viewed on a mobile device.
+-   The Github authentication flow is handled by Auth0.
+-   The weather data is retrieved from the OpenWeatherMap API using the `axios` library.
+-   The app uses React Context API to manage global state.
+-   The Tailwind CSS classes are configured in the `tailwind.config.js` file.
+-   The app includes basic error handling for API requests and invalid input.
+-   The `@types/react-router-dom` package is used for type definitions for React Router.
+-   The `react-router-hash-link` package is used to handle anchor tags with React Router.
 
-### `npm test`
+## Acknowledgements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-"# weather-forcast" 
+-   [React](https://reactjs.org/) - JavaScript library for building user interfaces
+-   [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
+-   [Tailwind CSS](https://tailwindcss.com/) - CSS framework for rapid UI development
+-   [Auth0](https://auth0.com/) - Identity and Access Management solution for developers
+-   [OpenWeatherMap API](https://openweathermap.org/api) - Weather data API
