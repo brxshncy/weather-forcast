@@ -15,11 +15,11 @@ export const WeatherPage: React.FC<IWeatherPageProps> = ({
             <table className='table-auto border-collapse border border-gray-700'>
                 <thead>
                     <tr>
-                        <th className='px-4 py-2 border border-gray-700'>
+                        <th className='hidden md:table-cell px-4 py-2 border border-gray-700'>
                             Date
                         </th>
-                        <th className='px-4 py-2 border border-gray-700'>
-                            City Temperature
+                        <th className='hidden md:table-cell px-4 py-2 border border-gray-700'>
+                            TEMP(F)
                         </th>
                         <th className='px-4 py-2 border border-gray-700'>
                             Description
@@ -37,10 +37,10 @@ export const WeatherPage: React.FC<IWeatherPageProps> = ({
                 </thead>
                 <tbody>
                     <tr>
-                        <td className='border border-gray-700 px-4 py-2'>
+                        <td className='hidden md:table-cell border border-gray-700 px-4 py-2'>
                             {weatherData?.date}
                         </td>
-                        <td className='border border-gray-700 px-4 py-2'>
+                        <td className='hidden md:table-cell border border-gray-700 px-4 py-2'>
                             {weatherData?.city_temp}
                         </td>
                         <td className='border border-gray-700 px-4 py-2'>
