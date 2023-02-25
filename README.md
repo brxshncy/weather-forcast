@@ -17,11 +17,8 @@ To get started, follow these steps:
 -   The `WeatherPage` component will only display the date and temperature when viewed on a mobile device.
 -   The Github authentication flow is handled by Auth0.
 -   The weather data is retrieved from the OpenWeatherMap API using the `axios` library.
--   The app uses React Context API to manage global state.
 -   The Tailwind CSS classes are configured in the `tailwind.config.js` file.
--   The app includes basic error handling for API requests and invalid input.
 -   The `@types/react-router-dom` package is used for type definitions for React Router.
--   The `react-router-hash-link` package is used to handle anchor tags with React Router.
 
 ## Acknowledgements
 
