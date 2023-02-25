@@ -7,6 +7,7 @@ import { Auth0Provider } from "@auth0/auth0-react";
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement
 );
+
 root.render(
     <Auth0Provider
         domain={`${process.env.REACT_APP_AUTH0_DOMAIN}`}
@@ -14,6 +15,7 @@ root.render(
         authorizationParams={{
             redirect_uri: window.location.origin,
         }}
+        useRefreshTokens={true}
     >
         <App />
     </Auth0Provider>
